@@ -1,0 +1,29 @@
+Welcome to the File Transfer script!
+Plese read and follow the next steps to configure and run the script.
+
+
+1-) Navigate to " /files_transfer" and open the configuration file "config.json"
+
+2-) In this file we can see 7 configurable parameters
+	2.1-) Source: is the source path, where files will be transferred from.
+	2.2-) Destiny: the destiny parth, where files will be transferred to.
+	2.3-) Timer: the time value, in seconds, the program will wait to verify the folder again.
+	2.4-) Filter_type: for you to choose how to filter the file names.
+		2.4.1-) Prefix: filter by searching a specific string in the start of the filename.
+		2.4.2-) Sufix: filter by searching a specific string in the end of the filename.
+		2.4.3-) Infix: filter by searching a specific string anywhere in the filename.
+	2.5-) Filter_value: specific string that the script will be looking for to filter and transfer the files.
+	2.6-) Operation: value that determines "normal" or "extra" case. "1" for normal, "2" for extra.
+	2.7-) Operation mode: value that determines the order the files will be transferred. "1" for oldest files first, "2" for newest files first.
+
+Obs.: The config.json file will come with default values (used locally) so you can use the same format to input your data.
+
+3-) After finishing the configuration file we need to run it, but first we need to configure the environment to run the python script. Open the terminal, navigate to the project folder and execute:
+
+	sudo chmod +x setup.sh
+	sh ./setup.sh
+
+4-) Now the environment for python is set and we can run the script! Just execute in terminal:
+
+	sudo chmod +x run.sh
+	./run.sh
