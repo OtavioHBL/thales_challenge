@@ -1,0 +1,11 @@
+{
+  "config": [
+    {
+      "source": "/home/otavio/Downloads",
+      "destiny": "/home/otavio",
+      "timer": 10,
+      "filter_type": "infix",
+      "filter_value": "mlk"
+    }
+  ]
+}
